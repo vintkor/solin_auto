@@ -1,10 +1,22 @@
 $('document').ready(function(){
 
+    function setActiveNav(){
+        var href = window.location.hash
+        $(href).addClass('active');
+    }
+
     $('#fullpage').fullpage({
         menu: '#menu',
         lockAnchors: false,
         anchors:['home', 'about', 'price_order'],
         navigation: false,
+        afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+            var href = window.location.hash;
+            $('.header__link').removeClass('active');
+            $('.'+anchorLink).toggleClass('active');
+            console.log(anchorLink);
+        },
 
         //Scrolling
         css3: true,

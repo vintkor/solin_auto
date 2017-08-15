@@ -33,6 +33,10 @@
             border-color: $black-color;
         }
     }
+    &__link.active {
+        border-color: $black-color;
+        color: $black-color;
+    }
     &__icon {
         display: inline-flex;
         align-items: center;
