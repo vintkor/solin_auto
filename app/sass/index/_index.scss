@@ -189,3 +189,22 @@
         }
     }
 }
+
+.copy {
+    display: block;
+    position: relative;
+    z-index: 20;
+    color: $text-color;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s1__slide {
+    height: calc(100vh - 90px);
+    margin-top: 95px;
+}
